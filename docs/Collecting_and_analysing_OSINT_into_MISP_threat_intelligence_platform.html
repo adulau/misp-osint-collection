@@ -1,0 +1,271 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>Collecting and analysing OSINT into MISP threat intelligence platform.</title>
+<style type="text/css">span.s1 {background-color: #FFFFFF; color: #000000; font-style: italic}span.s2 {background-color: #FFFFFF; color: #000000}</style>
+</head>
+<body>
+<h1 align="center" class="root">
+<a name="20uk789ukeagkl9e3m2i391u8b">Collecting and analysing OSINT into MISP threat intelligence platform.</a>
+</h1>
+<div align="center" class="globalOverview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Collecting and analysing OSINT into MISP threat intelligence platform..jpg"></div>
+<p align="center" class="topicImage">
+<img height="139" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/26esv1mp7d84gjtd2b95t0p2cm.png" width="139"></p>
+<h2 class="topic">
+<a name="18qn49v1dn59nsrl74hu1lblq1">Cross-checking if the OSINT is already known</a>
+</h2>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Cross-checking if the OSINT is already known.jpg"></div>
+<h3 class="topic">
+<a name="2lotcssbdimc6ir0h2cpesgm0k">&nbsp;Search in public indexer if already reported in other blog posts, reports or any public sources.</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<h2 class="topic">
+<a name="6bv9guc84jss5apved4fgorn9q">Cross-checking if the OSINT already exists in one or more MISP communities (public or private)</a>
+</h2>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Cross-checking if the OSINT already exists in one or more MISP communities (public or private).jpg"></div>
+<h3 class="topic">
+<a name="56r4g2b4dgn8nco6vm7e7g8fg8">&nbsp;If not create a new MISP event</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<p class="relationships">See Also: <a href="#2f33hrh2mj7cn1ksscus3ac49i">Create one or more MISP events</a>
+</p>
+<h3 class="topic">
+<a name="7oa8hc3elmtfrgiohu3ir7gv4g">&nbsp;If some events already exist and require an update, then make a MISP proposal.</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_2.png"></p>
+<h2 class="topic">
+<a name="2f33hrh2mj7cn1ksscus3ac49i">Create one or more MISP events</a>
+</h2>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Create one or more MISP events.jpg"></div>
+<div class="notesContainer">
+<p>A MISP event is usually a semantic bundle of information depending from a specific report, event, notes, blog posts or information.</p>
+<p></p>
+<p>As an example, the following blogpost can be considered as an event:</p>
+<p></p>
+<p>https://security.googleblog.com/2017/11/tizi-detecting-and-blocking-socially.html</p>
+<p></p>
+<p>The above example will be used for the overall flow.</p>
+<p></p>
+<p></p>
+</div>
+<p class="relationships">See Also: <a href="#56r4g2b4dgn8nco6vm7e7g8fg8">If not create a new MISP event</a>
+</p>
+<h3 class="topic">
+<a name="2q4s6b1e6901850ojb3f43dfje">&nbsp;Set a meaningful event info</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<div class="notesContainer">
+<p>The Event Info field in MISP is also a summary and a title of the event. It's important to set a meaning and concise summary.</p>
+<p></p>
+<p>Based on the above example, the title of the blog post:</p>
+<p></p>
+<p>
+<span class="s1">Tizi: Detecting and blocking socially engineered spyware on Android </span>
+</p>
+<p>
+<span class="s1"></span>
+</p>
+<p>
+<span class="s2">It's meaningful and concise. Some analysts like to prefix immediately  in the title that the information is OSINT and do the following title:</span>
+</p>
+<p>
+<span class="s2"></span>
+</p>
+<p>
+<span class="s1">OSINT - Tizi: Detecting and blocking socially engineered spyware on Android </span>
+</p>
+</div>
+<h3 class="topic">
+<a name="6077f7ch5k48er1kv495mck88f">&nbsp;Set a date in accordance with the event</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<div class="notesContainer">
+<p>A MISP event contains a date which is usually the date related to when the activity happens or detected. It's often easier and clearer to set the publishing date of the OSINT information even if the event happened in the past. </p>
+<p></p>
+<p>For the above case, the date is </p>
+<p>November 27, 2017 as this is the date mentioned in the blog post.</p>
+<p></p>
+</div>
+<h3 class="topic">
+<a name="7m3bn1rtme01cogkjkrs0fqe69">&nbsp;Tag and classify information at event level (default tagging for the whole event)</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<p class="topicImage">
+<img height="153" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/5a4lvhfjva27c128rqm3g0liab.png" width="400"></p>
+<div class="notesContainer">
+<p>Tagging is important because it helps analyst at a later state to group or search per specific classification or categories.</p>
+<p></p>
+<p>We strongly recommend to tag as tlp:white classification for information collected from OSINT source and especially add a distribution to "All communities". This allows everyone to get your structured information via MISP sharing. And especially to benefit from correction, improvement or updates from other analysts.</p>
+<p></p>
+<p>If you create or share your event in MISP CIRCL communities, feel free to add circl:osint-feed to add your event in the default OSINT export available in default MISP installation. This allows a larger diffusion of your work within MISP communities.</p>
+</div>
+<h3 class="topic">
+<a name="0pfohr2csagm0jac0p5f65nj7c">&nbsp;Add attributes related to the OSINT source</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Add attributes related to the OSINT source.jpg"></div>
+<h3 class="topic">
+<a name="3rro9n9pdeuu0h71c4neesua68">&nbsp;&nbsp;Add "External analysis"/link to the original source </a>
+</h3>
+<p class="topicImage">
+<img height="322" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/6pkedn123t88n9n8cqbuclpk46.png" width="400"></p>
+<div class="notesContainer">
+<p>Adding reference to the original source is a critical step to ensure proper credits, further analysis or set a confidence/credibility level of the OSINT source.</p>
+<p></p>
+<p>An additional benefit of adding a source is the ability to track existing one with the built-in correlation in MISP.</p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+<h3 class="topic">
+<a href="https://www.misp-project.org/taxonomies.html#_osint" name="4148amkin9bcddrt5cts0gk89f">&nbsp;&nbsp;Add "External analysis"/text to the event</a>
+</h3>
+<div class="notesContainer">
+<p>Adding a summary or abstract of the information helps the analysts to find back later information without the need to check external resources. </p>
+<p></p>
+<p></p>
+</div>
+<h3 class="topic">
+<a name="6ldnh030g2j2rrfj04i8g7ke77">&nbsp;&nbsp;Classify and tags the OSINT source (with at least the osint namespace)</a>
+</h3>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Classify and tags the OSINT source (with at least the osint namespace).jpg"></div>
+<p class="topicImage">
+<img height="208" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/1tjbk0vcv683uh8889lqol26qk.png" width="400"></p>
+<h3 class="topic">
+<a name="2e3vq7pmn1m13bgf60h16imei7">&nbsp;&nbsp;&nbsp;If there is a missing value in an existing taxonomy or a new one have to be created. </a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_2.png"></p>
+<p class="relationships">See Also: <a href="#3oqs7n1ncqmed6be2rck3k90qj">Update an existing MISP taxonomy</a>
+</p>
+<h3 class="topic">
+<a name="11cp43ubsqh4t5hhfpqrc9ncph">&nbsp;Add one or more galaxy/cluster to the event</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_2.png"></p>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Add one or more galaxy cluster to the event.jpg"></div>
+<p class="topicImage">
+<img height="400" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/2aommk8t62okah23ifkfo3ivs7.png" width="356"></p>
+<h3 class="topic">
+<a name="32bt7q3qe91mkophrv2ll8b32i">&nbsp;&nbsp;If there is no related galaxy/cluster/value, add a new one.</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_2.png"></p>
+<p class="relationships">See Also: <a href="#40lq7ghhlibm3e5jabfkg2aftm">Update an existing MISP galaxy cluster</a>
+</p>
+<h3 class="topic">
+<a name="0kurr339st0hjl3f372glnj7l7">&nbsp;Add attributes related to the indicators mentioned in the OSINT document</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Add attributes related to the indicators mentioned in the OSINT document.jpg"></div>
+<h3 class="topic">
+<a name="5utopcfbbl1f549r5intleg36o">&nbsp;&nbsp;If there is any files mentioned in the OSINT information, add corresponding file object(s).</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<p class="topicImage">
+<img height="126" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/2bosl9uhkkg8unudkbbude61ah.png" width="400"></p>
+<h3 class="topic">
+<a name="0re5puuscd0nqlhtp41sbbe6q0">&nbsp;Add attributes related to the target groups mentioned in the OSINT document</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Add attributes related to the target groups mentioned in the OSINT document.jpg"></div>
+<h3 class="topic">
+<a name="66nnj1qajolck937t6d9g045ml">&nbsp;&nbsp;If there is any target groups, pick the right attribute types in the "Targeting data" category.</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<p class="topicImage">
+<img height="299" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/5h5g9i2rh777tdiburu32iv7th.png" width="400"></p>
+<h3 class="topic">
+<a name="2v1t90q36bvff159ot7rcbn8k9">&nbsp;Add and attach evidences</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Add and attach evidences.jpg"></div>
+<h3 class="topic">
+<a name="05ro8ahnubevtjcld3erbkkugc">&nbsp;&nbsp;Evidence like screenshot or static report</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<p class="topicImage">
+<img height="267" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/07dkpqsoc6frqllp8hrm8bag7h.png" width="400"></p>
+<h3 class="topic">
+<a name="79mp5uq5jdhl1spujbnb8899it">&nbsp;&nbsp;Evidence like malicious sample files or malware</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_1.png"></p>
+<div class="notesContainer">
+<p>Add attachment in MISP allows to include malicious or non-malicious file to the platform. The difference is a matter of flag "IDS (encrypt and hash" where the evidence will be encrypted with a default password "infected" to avoid any human-error to execute malicious binaries.</p>
+</div>
+<h2 class="topic">
+<a href="https://www.misp-project.org/galaxy.html" name="40lq7ghhlibm3e5jabfkg2aftm">Update an existing MISP galaxy cluster</a>
+</h2>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Update an existing MISP galaxy cluster.jpg"></div>
+<p class="relationships">See Also: <a href="#32bt7q3qe91mkophrv2ll8b32i">If there is no related galaxy/cluster/value, add a new one.</a>
+</p>
+<h3 class="topic">
+<a href="https://github.com/MISP/misp-galaxy" name="4ldddje35o0c16v7v45a7gr41n">&nbsp;Adding a new value to an existing cluster (or fix an existing one)</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_2.png"></p>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Adding a new value to an existing cluster (or fix an existing one).jpg"></div>
+<h3 class="topic">
+<a href="https://github.com/MISP/misp-galaxy/issues" name="2ln09evt2fkn64t3joab3u301v">&nbsp;&nbsp;Open an issue</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_3.png"></p>
+<h3 class="topic">
+<a name="6qc1uca2dg7v80kcjl0qdn91en">&nbsp;&nbsp;Update the JSON of the cluster and create a pull-request</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_2.png"></p>
+<h2 class="topic">
+<a href="https://www.misp-project.org/taxonomies.html" name="3oqs7n1ncqmed6be2rck3k90qj">Update an existing MISP taxonomy</a>
+</h2>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Update an existing MISP taxonomy.jpg"></div>
+<p class="relationships">See Also: <a href="#2e3vq7pmn1m13bgf60h16imei7">If there is a missing value in an existing taxonomy or a new one have to be created. </a>
+</p>
+<h3 class="topic">
+<a href="https://github.com/MISP/misp-taxonomies/" name="630troncsdvbgv4jcf05o8icd6">&nbsp;Adding a new value to an existing taxonomy (or fix an existing one)</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_2.png"></p>
+<div class="overview">
+<img src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/Adding a new value to an existing taxonomy (or fix an existing one).jpg"></div>
+<h3 class="topic">
+<a href="https://github.com/MISP/misp-taxonomies/issues" name="62rhsgsocoqosnjp74pqujrvb4">&nbsp;&nbsp;Open an issue</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_3.png"></p>
+<h3 class="topic">
+<a name="0q1m70tmb67rkulimfds00hb6s">&nbsp;&nbsp;Update the JSON and create a pull-request</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="Collecting_and_analysing_OSINT_into_MISP_threat_intelligence_platform_files/images/priority_2.png"></p>
+</body>
+</html>
