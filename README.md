@@ -22,9 +22,11 @@ Fork the project, download the [drawio format](https://github.com/adulau/misp-os
 
 # License
 
+~~~
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+
 Copyright (c) 2017-2019 Alexandre Dulaunoy
 Copyright (c) 2019 Vincent Falconieri
-
-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+~~~
 
 
