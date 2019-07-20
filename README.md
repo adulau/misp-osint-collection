@@ -4,17 +4,17 @@ This repository describes a process/best-practices to gather OSINT information (
 
 # A process with best practices to add OSINT gathered information into MISP
 
-![https://raw.githubusercontent.com/adulau/misp-osint-collection/master/version-2/OSINT_MISP_almostcomplete.pdf.png]()
+![](https://raw.githubusercontent.com/adulau/misp-osint-collection/master/version-2/OSINT_MISP_almostcomplete.pdf.png)
 
 
 The document is available in draw.io format and the [source is available](https://github.com/adulau/misp-osint-collection/blob/master/version-2/OSINT_MISP_almostcomplete.xml)).
 
 # TODO
 
-- [] Add the steps in a simple JSON/Markdown (to generate the graph/mindmap from the text) 
-- [] Add [improved workflow taxonomy](https://www.misp-project.org/taxonomies.html#_workflow)
-- [] Add the other source such as MISP information sharing communities where similar information can be found
-- [] Add the workflow in MISP core software
+- [ ] Add the steps in a simple JSON/Markdown (to generate the graph/mindmap from the text)
+- [ ] Add [improved workflow taxonomy](https://www.misp-project.org/taxonomies.html#_workflow)
+- [ ] Add the other source such as MISP information sharing communities where similar information can be found
+- [ ] Add the workflow in MISP core software
 
 # How to contribute?
 
