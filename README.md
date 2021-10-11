@@ -18,7 +18,7 @@ The document is available in draw.io format and the [source is available](https:
 
 # How to contribute?
 
-Fork the project, download the [drawio format](https://github.com/adulau/misp-osint-collection/blob/master/version-2/OSINT_MISP_almostcomplete.xml) document, edit the document with drawio, commit and do a pull-request.
+Fork the project, download the [drawio format](https://github.com/adulau/misp-osint-collection/blob/master/version-4/MISP-Guidlines-Parsed-drawio.xml) document, edit the document with drawio, commit and do a pull-request.
 
 # License
 
